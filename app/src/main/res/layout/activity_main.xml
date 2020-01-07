@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="注册"
+        android:textSize="30sp"
+        android:paddingLeft="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="登陆"
+        android:textSize="30sp"
+        android:paddingRight="15dp">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/ib_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_above="@id/tv_Register"
+        android:layout_alignRight="@id/tv_Register">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/ib_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_above="@id/tv_Login"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/tv_Login">
+
+    </ImageButton>
+
+
+</RelativeLayout>
