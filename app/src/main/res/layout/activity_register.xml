@@ -4,13 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".RegisterActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/et_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:width="350dp"
+        android:background="@drawable/edittext_fill"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:maxLines="1"
+        android:hint="  请输入手机号" />
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ahahah">
+        android:orientation="horizontal">
 
-    </TextView>
+        <EditText
+            android:id="@+id/et_validateNum"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:width="220dp"
+            android:background="@drawable/edittext_fill"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:maxLines="1"
+            android:hint="  验证码" />
+
+        <Button
+            android:id="@+id/bt_validateNum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="发送验证码"
+            android:textSize="15sp"
+            android:textColor="#3c5e83"
+            android:background="#b6c7db"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:width="350dp"
+        android:background="@drawable/edittext_fill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:maxLines="1"
+        android:hint="  请输入用户名" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:width="350dp"
+        android:background="@drawable/edittext_fill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:maxLines="1"
+        android:hint="  请设置密码（6~18位）" />
+
+    <EditText
+        android:id="@+id/et_repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:width="350dp"
+        android:background="@drawable/edittext_fill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:maxLines="1"
+        android:hint="  重复密码" />
+
+    <Button
+        android:id="@+id/re_landing_btn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="立即注册"
+        android:textSize="30sp"
+        android:textColor="#e4d9e1"
+        android:background="#6d91a9"
+        android:layout_marginTop="40dp" />
+
+
 
 </LinearLayout>
